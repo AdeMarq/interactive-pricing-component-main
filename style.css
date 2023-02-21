@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(230, 100%, 99%);
+  background-size: contain;
+}
+
+.container {
+  max-width: 570px;
+  margin: 0 auto;
+}
+/*========= PAGE DESC STYLING ===================*/
+
+.page-desc {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.page-desc h1 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: hsl(227, 35%, 25%);
+}
+.page-desc p {
+  margin-top: 0.937rem;
+  color: hsl(225, 20%, 60%);
+  font-weight: 600;
+}
+
+/*=========END OF PAGE DESC STYLING ===================*/
+
+/*========= BANNER BOX STYLING ===================*/
+
+.banner-box {
+  background-color: white;
+  height: fit-content;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: -1px 13px 20px -4px rgba(0, 0, 0, 0.33);
+  margin: 1rem;
+}
+
+.view-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.view-price p {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  color: hsl(225, 20%, 60%);
+}
+.view-price h2 {
+  font-size: 2.5rem;
+  color: hsl(227, 35%, 25%);
+}
+.banner-box span {
+  color: hsl(225, 20%, 60%);
+}
+
+.view-price .pricing {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-price .pricing span {
+  margin-top: 0.79rem;
+  font-weight: 600;
+  color: hsl(227, 35%, 25%);
+}
+
+.mobile-cost {
+  display: none;
+}
+
+input {
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 0%,
+    hsl(224, 65%, 95%) 100%
+  );
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 10px 14px 0px rgba(16, 213, 194, 0.74);
+}
+
+.billing {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.billing p {
+  color: hsl(225, 20%, 60%);
+  font-size: 0.86rem;
+}
+
+.billing .toggle-wrapper {
+  position: relative;
+  height: 22px;
+  width: 45px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: hsl(223, 50%, 87%);
+  border-radius: 18px;
+}
+.billing .toggle-wrapper.active {
+  background: hsl(174, 86%, 45%);
+  transition: 0.3s;
+}
+
+.toggle-wrapper .toggle-btn {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: 0;
+  left: 4px;
+  top: 3.5px;
+  bottom: 0;
+  background: white;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+.toggle-wrapper .toggle-btn.active {
+  left: 26px;
+  transition: 0.3s;
+}
+
+.billing .discount-p {
+  background-color: hsl(14, 92%, 95%);
+  border-radius: 5px;
+  color: hsl(15, 100%, 70%);
+  font-size: 0.85rem;
+}
+.billing .discount-m {
+  display: none;
+}
+
+.banner-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.banner-foot-left li {
+  list-style-type: none;
+  line-height: 1.7rem;
+}
+
+.banner-foot-left li small {
+  margin-left: 1rem;
+  color: hsl(225, 20%, 60%);
+  font-weight: 600;
+}
+
+.banner-foot-right {
+  display: grid;
+  place-content: center;
+}
+
+.banner-foot-right button {
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(225, 20%, 60%);
+  font-weight: 600;
+}
+
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(227, 35%, 25%);
+}
+
+a {
+  color: hsl(227, 35%, 25%);
+}
+
+/*=========  END OF BANNER BOX STYLING ===================*/
+
+/*========= MEDIA STYLING ===================*/
+
+@media (max-width: 485px) {
+  .page-desc h1 {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+  }
+
+  .page-desc p {
+    margin-top: 0.937rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    line-height: 2rem;
+  }
+
+  .banner-foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-foot-right button {
+    margin-top: 2rem;
+    height: 3.5rem;
+    width: 14rem;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .billing .discount-p {
+    display: none;
+  }
+
+  .view-price p {
+    font-size: 1.1rem;
+  }
+
+  .view-price h2 {
+    font-size: 2.5rem;
+    color: hsl(227, 35%, 25%);
+    display: none;
+  }
+
+  .view-price {
+    align-items: center;
+    justify-content: center;
+  }
+  .view-price .pricing span {
+    display: none;
+  }
+
+  .mobile-cost {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .mobile-cost h2 {
+    font-size: 2.7rem;
+    color: hsl(227, 35%, 25%);
+  }
+  .mobile-cost h2 span {
+    color: hsl(227, 35%, 25%);
+  }
+
+  .billing .discount-m {
+    display: flex;
+    background-color: hsl(14, 92%, 95%);
+    border-radius: 5px;
+    font-weight: 600;
+    color: hsl(15, 100%, 70%);
+  }
+
+  .billing p {
+    font-size: 1rem;
+  }
+
+  .banner-foot-left li {
+    line-height: 2.5rem;
+  }
+
+  .banner-foot-left li small {
+    margin-left: 1rem;
+    color: hsl(225, 20%, 60%);
+    font-size: 0.9rem;
+  }
+
+  .attribution {
+    text-align: center;
+    color: hsl(227, 35%, 25%);
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-desc h1 {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+  }
+
+  .page-desc p {
+    margin-top: 0.937rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    line-height: 2rem;
+  }
+
+  .billing p {
+    font-size: 0.62rem;
+    margin-top: 0.2rem;
+  }
+}
